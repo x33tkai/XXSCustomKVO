@@ -111,7 +111,6 @@ static void xxs_dealloc(id self,SEL _cmd){
     object_setClass(self, superClass);
     NSLog(@"isa 指针指回去了");
     
-    objc_msgSend(self, NSSelectorFromString(@"dealloc"));
 }
 
 #pragma mark - 从get方法获取set方法的名称 key ===>>> setKey:
